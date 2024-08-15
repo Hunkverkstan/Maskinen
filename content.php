@@ -16,7 +16,7 @@
 </div>
 
 <div id="content-area" class="bg1">
-<h1 class="text1 marg-medium"><?php the_title(); ?></h1>   
+<h1 class="text1 marg-medium"><?php the_title(); ?>2</h1>   
 
 <h3 class="text1 marg-large"><?php echo strip_tags( get_the_excerpt() ); ?></h3>
     
