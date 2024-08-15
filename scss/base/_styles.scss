@@ -1,0 +1,33 @@
+/* Styles imported –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.marg-no {margin-bottom:0;}
+.marg-small {margin-bottom:1.5rem;}
+.marg-medium {margin-bottom:2rem;}
+.marg-large {margin-bottom:3rem;}
+
+.marg-up-no {margin-top:0;}
+.marg-up-small {margin-top:1.5rem;}
+.marg-up-medium {margin-top:2rem;}
+.marg-up-large {margin-top:3rem;}
+
+.marg-right {margin-right: 0.5rem;}
+.marg-right-medium {margin-right: 0.75rem;}
+.marg-left {margin-left: 0.5rem;}
+.marg-left-medium {margin-left: 0.75rem;}
+
+.float-left {float: left;}
+.float-center {margin: 0 auto;display: block;}
+.float-right {float: right;}
+
+.align-center {
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 3rem 2rem!important;    
+}
+
+.no-height {line-height: 0;}
+
+.vertical-center { align-items: center; display: flex; flex-direction: column; justify-content: center;}

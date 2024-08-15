@@ -1,0 +1,40 @@
+/* Buttons imported –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button-grp {
+margin: -2px;}
+
+.button,button,.button-time,.button-stars {
+display: inline-block;
+margin: 2px;
+border-width: 0;
+border-color: transparent;
+font-family: $font-stack;
+position: relative;
+font-size: 1.4rem;
+letter-spacing: -0.05rem;
+border-radius: 100px;
+padding: 5px 15px;
+overflow: hidden;
+border-width: 0;
+}
+
+.button,button,.button-stars {
+color:$third-text-color;
+}
+
+.button,button {
+cursor: pointer;
+transition: box-shadow 0.5s ease;
+-webkit-transition: box-shadow 0.5s ease;
+-moz-transition: box-shadow 0.5s ease;
+-o-transition: box-shadow 0.5s ease;
+}
+
+.button:hover,button:hover {-moz-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);border:none;}
+.button:focus,button:focus {outline:none;border:none;}
+
+.button.text1 {
+color:$primary-text-color;
+}

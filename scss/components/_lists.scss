@@ -1,0 +1,52 @@
+/* Lists imported –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul {list-style: none; }
+ol {list-style: decimal inside; }
+ol, ul {padding-left: 0; margin:0; }
+ul ul,
+ul ol,
+ol ol,
+ol ul {margin: 1.5rem 0 1.5rem 3rem;}
+
+ol { 
+    counter-reset: item;
+    list-style-type: none;
+}
+
+li { 
+font-size: 1.6rem;
+letter-spacing: -0.05rem;    
+display: block; }
+
+li:first-child {
+font-size: 1.8rem;
+letter-spacing: -.1rem;
+margin-bottom: 0.5rem;
+padding-bottom: 0.5rem;
+border-bottom: 1px solid rgba(154, 154, 154, 0.2);}
+
+li:before { 
+    content: counter(item) "  "; 
+    counter-increment: item;
+    margin-right: 2rem;
+    width: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+ol.top li::before {
+color: $primary-color; 
+}
+
+ol.bottom li::before {
+color: $primary-accent-color; 
+}
+
+.list-meta {
+font-size: 1.3rem;
+letter-spacing: -0.05rem;}
+
+@include x-large {
+li:first-child {font-size: 1.6rem;}
+li {font-size: 1.5rem;}
+}

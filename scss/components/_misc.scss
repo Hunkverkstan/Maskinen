@@ -1,0 +1,19 @@
+/* Misc imported –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+hr {
+border-width: 0;
+border-top: 1px solid rgba(154, 154, 154, 0.2); }
+
+.border {
+border: 1px solid rgba(154, 154, 154, 0.2); }
+
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Dark mode –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body.dark .border {border: none;}

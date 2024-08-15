@@ -1,0 +1,19 @@
+/* Float imported –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@include large {
+.float {
+-webkit-transform: perspective(0) translateZ(0);
+transform: perspective(0) translateZ(0);
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+-webkit-transition-property: transform;
+transition-property: transform;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
+}
+
+.float:hover, .float:focus, .float:active {
+-webkit-transform: translateY(-8px);
+transform: translateY(-8px);
+}
+}

@@ -1,0 +1,244 @@
+/* Nav imported –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#nav-header {
+background-color: $third-bg-color;
+z-index: 3;
+padding: 1.5rem 0 2rem 0;
+transition: top 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+top:0px;
+position: fixed;
+width: 100%;    
+display: flex;
+justify-content: space-between;}
+
+.hide {top:-75px!important;}
+.show {top:0px!important;border-bottom: 1px solid rgba(154, 154, 154, 0.2);}
+.show-shadow {box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);}
+
+#nav-menu {
+cursor: pointer;
+height: 34px;
+margin-left: 0.5rem; 
+margin-right: 2rem;   
+border-radius: 100px;
+padding: 0 10px;    
+font-size: 1.5rem;
+letter-spacing: -0.05rem;
+display: flex;
+align-items: center;
+background-color: $secondary-bg-color;
+}
+
+#nav-menu svg {
+margin-top: -2px;
+width: 16px;
+height: 16px;}
+
+#nav-logo,#error-nav-logo {
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+#nav-logo {
+background-image: url(https://www.malmomaskinen.se/wp-content/themes/Maskinen/img/malmomaskinen_header.png);
+margin-left: 2rem;
+position: relative;
+top: 1rem;
+width: 165px;
+height: 15px;
+cursor: pointer;
+}
+
+#error-nav-logo {
+background-image: url(https://www.malmomaskinen.se/wp-content/themes/Maskinen/img/malmomaskinen_header_white.png);
+position: absolute;
+top: 20px;
+width: 180px;
+height: 16px;
+}
+
+#nav-items {
+display: none; 
+background-color:$primary-bg-color;   
+}
+
+#nav-item-content-head-1 {
+width: calc(80% - 4rem); 
+}
+
+#nav-items.is-active {
+position: absolute;
+z-index: 1;
+width: 100%;
+height: 100dvh;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+padding-left: 1rem;}
+
+#nav-items-close svg {
+cursor: pointer;
+position: absolute;
+top: 1.75rem;
+right: 3.5rem;
+width: 25px;
+height: 25px;
+stroke-width: 2px;}
+
+.nav-item-medium,.nav-item-small {   
+letter-spacing: -0.05rem;
+padding: 0 1rem;
+margin: 0;    
+}
+
+.nav-item-medium {font-size: 1.8rem;}
+.nav-item-small {font-size: 1.5rem;}
+
+.nav-item-header {
+font-size: 1.5rem; 
+letter-spacing: -0.05rem;
+margin-left: 1rem;   
+padding-bottom: 1rem;
+margin-bottom: 1rem;
+margin-top: 2rem;    
+border-bottom: 1px solid rgba(154, 154, 154, 0.2);    
+}
+
+.nav-item {
+font-size: 2.4rem;
+letter-spacing: -0.1rem;
+line-height: 1.3;    
+margin-left: 1rem;
+padding: 0.5rem 0;}
+
+.nav-item svg {
+width: 20px;height: 20px;}
+
+.nav-item-medium svg {
+width: 14px;height: 14px;}
+
+#nav-items .fb,#nav-items .ig,#nav-items .tt {
+display: block;
+margin-bottom: 0.75rem;}
+
+
+#body-inner {
+overflow: visible;
+position: relative;}
+
+#svg1,#svg2 {display: none!important; position: absolute;}
+#svg1 {width: 600px;left: -370px;top: 100px;}
+#svg2 {width: 700px;right: -380px;bottom: 120px;}
+#svg3 {position: absolute; width: 300px; bottom:-150px;right:-150px;}
+.svg1 {fill:$svg-color-2;}
+.svg2 {fill:$svg-color-2;}
+.svg3 {fill:$svg-color-1;}
+
+/* Dark mode switch –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.switch {
+  position: relative;
+  margin-left: auto;
+  display: inline-block;
+  width: 55px;
+  height: 34px;
+  align-self: center;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $secondary-bg-color;
+-webkit-tap-highlight-color: transparent;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 8px;
+  bottom: 8px;
+  background-color: #ffdf4c;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: $fourth-bg-color;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+ background-color: $secondary-text-color;
+}
+
+.slider {
+  border-radius: 30px;
+}
+
+.slider:before {
+  border-radius: 50%;
+}
+
+.slider:active,.slider:focus {outline: none;}
+
+/* Dark mode –––––––––––––––––––––––––––––––––––––––––––––––––– */
+body.dark #nav-logo {background-image: url(https://www.malmomaskinen.se/wp-content/themes/Maskinen/img/malmomaskinen_header_white.png);}
+body.dark #nav-menu,body.dark #nav-items,body.dark #nav-item-content-1 {background-color:$fourth-bg-color!important;}
+body.dark #nav-header,body.dark .nav-item.current {background-color:$fourth-bg-color-dark!important;}
+body.dark #intro-outer {border: none;}
+
+/* Media queries –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@include large { 
+body.dark #nav-header {background-color:$fourth-bg-color!important;}
+body.dark input:checked + .slider {background-color: $fourth-bg-color-dark!important;}
+
+#svg1,#svg2 {display: block!important;}
+#nav-header {background-color: $primary-bg-color;width: 250px;position: sticky;border-radius: 20px;margin-right: 5rem;margin-bottom: 3rem; flex-wrap: wrap;top:5rem;}
+#nav-logo {order:1;margin-left: 3rem;margin-bottom: 4rem;}
+#nav-menu {display: none;}
+#nav-items {order:2;display: block;width:100%;background-color: unset;}
+#nav-items-close,#svg3 {display: none;}
+.nav-item-medium {font-size: 1.5rem;margin:0 2rem;}
+.nav-item-small {font-size: 1.4rem;}
+#nav-item-content-head-1 {display: none;}
+#nav-item-content-1 {margin-left:2rem;margin-right: 2rem;}
+#nav-item-content-2 {padding: 3rem 3rem 0 3rem;margin: 2rem 0 3rem 0;border-top: 1px solid rgba(154, 154, 154, 0.2);}
+#nav-items .fb, #nav-items .ig, #nav-items .tt {margin: 0 auto 0.75rem auto;}
+.show,.hide {top: 50px!important;}    
+.switch {order:3;margin: 0 auto;}
+.nav-item,.nav-item-header {letter-spacing: -0.05rem;width: auto;}
+.nav-item {font-size: 1.6rem;padding: 1rem 1.5rem;margin-left:1.5rem;margin-right: 1.5rem;}
+.nav-item.current {border-radius: 100px;background-color: $third-bg-color;}
+.nav-item-header {margin-top: 2rem;margin-left:3rem;margin-right: 3rem;padding: 1rem 0;font-size: 1.4rem;}
+.nav-item svg {width:14px;height: 14px;}
+.nav-item-medium svg {width: 12px;height: 12px;}
+
+#nav-item-content-head-1 {width: auto; position: relative;cursor: default;}
+  
+.show {box-shadow: none;border:none;top: 20px;}
+}
+
+@include x-large {
+#nav-header {width:200px;}
+#nav-logo {width: 140px;height: 13px;}
+}
+
+@include xx-large {
+#nav-header {width:250px;}
+#nav-logo {width: 165px;height: 15px;}
+}

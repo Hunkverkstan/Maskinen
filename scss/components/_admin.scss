@@ -1,0 +1,22 @@
+/* Admin imported –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#sidebar-edit {
+background-color: #222222;
+bottom: 10px;
+right: 10px;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 10px;
+padding-bottom: 10px;
+position: fixed;
+z-index: 999999;    
+border-radius: 100px;
+}
+
+.sidebar-edit-text {
+color: #fafafa;
+font-size: 1.6rem;
+font-family: $font-stack;
+margin: 0;
+}
+

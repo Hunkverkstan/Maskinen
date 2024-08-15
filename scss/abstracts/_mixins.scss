@@ -1,0 +1,37 @@
+/* Media queries imported –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@mixin small {
+  @media only screen and (min-width: 450px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: 700px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin x-large {
+  @media only screen and (min-width: 1150px) {
+    @content;
+  }
+}
+
+@mixin xx-large {
+  @media only screen and (min-width: 1250px) {
+    @content;
+  }
+}
+
+@mixin xxx-large {
+  @media only screen and (min-width: 1500px) {
+    @content;
+  }
+}

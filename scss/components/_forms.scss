@@ -1,0 +1,79 @@
+/* Forms imported –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+select {
+  height: 38px;
+  width:100%;
+  padding: 0; 
+  background-color:transparent;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid $secondary-text-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  box-shadow: none;
+  box-sizing: border-box; }
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  resize: none;
+  width:100%;
+  margin-bottom: 1rem; 
+  margin-top: 1rem; 
+  padding: 0px 0px 10px 0px;
+  background-color:transparent;
+  font-size: 1.6rem;
+  line-height: 25px;
+  font-family: Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid $secondary-text-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  box-shadow: none;
+  box-sizing: border-box;}
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border-bottom: 1px solid $secondary-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline: 0; }
+label,
+legend {
+  font-size:1.6rem;}
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  left: 0;}
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-family: Helvetica, Arial, sans-serif; }

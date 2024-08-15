@@ -1,0 +1,60 @@
+/* Colors imported –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.text1 {color:$primary-text-color;}
+.text2 {color:$secondary-text-color;}
+.text3 {color:$third-text-color;}
+.text4 {color:$fourth-text-color;}
+
+.primary {color:$primary-color;}
+.secondary {color:$secondary-color;}
+.third {color:$third-color;}
+.fourth {color:$fourth-color;}
+.accent1 {color:$primary-accent-color;}
+
+.messenger {color:$messenger-color;}
+.messenger-bg {background-color:$messenger-color;}
+.messenger-bg-tone {background-color:$messenger-color-bg;}
+
+.fb {color:$fb-color;}
+.fb-bg {background-color:$fb-color;}
+.fb-bg-tone {background-color:$fb-color-bg;}
+
+.ig {color:$ig-color;}
+.ig-bg {background-color:$ig-color;}
+.ig-bg-tone {background-color:$ig-color-bg;}
+
+.tt {color:$tt-color;}
+.tt-bg {background-color:$tt-color;}
+.tt-bg-tone {background-color:$tt-color-bg;}
+
+.bg1 {background-color:$primary-bg-color;}
+.bg2 {background-color:$secondary-bg-color;}
+.bg3 {background-color:$third-bg-color;}
+.bg4 {background-color:$fourth-bg-color;}
+
+.primary-bg {background-color:$primary-color;}
+.primary-bg-tone {background-color:$primary-color-bg;}
+.secondary-bg {background-color:$secondary-color;}
+.secondary-bg-tone {background-color:$secondary-color-bg;}
+.third-bg {background-color:$third-color;}
+.third-bg-tone {background-color:$third-color-bg;}
+.fourth-bg {background-color:$fourth-color;}
+.fourth-bg-tone {background-color:$fourth-color-bg;}
+
+/* Dark mode –––––––––––––––––––––––––––––––––––––––––––––––––– */
+body.dark .coffee-bg-tone,body.dark .twitter-bg-tone,body.dark .third-bg-tone,body.dark .fourth-bg-tone,body.dark .bg1,body.dark .bg2,body.dark .bg3
+{background-color:$fourth-bg-color;}
+
+body.dark .text1,body.dark .coffee,body.dark .twitter,body.dark .secondary-bg-tone .secondary,body.dark .secondary-bg-tone.secondary,body.dark .fb,body.dark .ig,body.dark .tt,body.dark .messenger {
+color:$third-text-color;
+}
+
+body.dark .button.bg1,body.dark button.bg2,body.dark .article-block-small-meta,body.dark .primary-bg-tone {
+background-color:$fourth-bg-color-dark;
+}
+
+body.dark .secondary-bg-tone {background-color:$secondary-color-bg-dark;}
+body.dark .fb-bg-tone {background-color:$fb-color;}
+body.dark .ig-bg-tone {background-color:$ig-color;}
+body.dark .tt-bg-tone {background-color:$tt-color;}
+body.dark .messenger-bg-tone {background-color:$messenger-color;}
