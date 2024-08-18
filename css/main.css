@@ -556,6 +556,8 @@ body.dark #flex-outer-intro {
     margin: 0 1rem;
     width: 50%; }
   .flex-adjustable-50:first-child {
+    margin-bottom: 0; }
+  .flex-adjustable-50-large:first-child {
     margin-bottom: 0; } }
 
 @media only screen and (min-width: 1000px) {
