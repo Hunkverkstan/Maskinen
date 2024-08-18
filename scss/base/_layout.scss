@@ -52,6 +52,7 @@ margin: 0 -1rem;}
 .flex-adjustable-50,.flex-adjustable-50-large {
 margin: 0 1rem;
 width: 50%;}
+.flex-adjustable-50:first-child {margin-bottom: 0;}
 }
 
 @include large {

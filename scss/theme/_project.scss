@@ -523,7 +523,7 @@
 /* Content Styles */
 .content-news #content-area {
   width: calc(100% - 2rem);
-  padding: 3rem;
+  padding: 3rem 3rem 2rem 3rem;
   margin-top: 0;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -1197,7 +1197,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #111111 100%)!imp
 .review-block-small-info{width:calc(100% - 3rem - 150px);padding:1rem 0 0 3rem}
 .article-block-alt{height:350px}
 #content-img{height:350px;margin-left:0;width:100%}
-.content-news #content-area{padding:4rem 5rem 3rem 5rem;width:calc(100% - 10rem)}
+.content-news #content-area{padding:3rem 5rem 2rem 5rem;width:calc(100% - 10rem)}
 .content-news #content-img{margin-left:0;height:250px;width:100%}
 #content-area{border-radius:20px;padding:4rem;width:unset;margin:0 0 3rem 0}
 #wpgmza_map_1{margin-left:0!important;width:100%!important;border-radius:20px!important}

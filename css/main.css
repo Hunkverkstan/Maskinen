@@ -554,7 +554,9 @@ body.dark #flex-outer-intro {
     margin: 0 -1rem; }
   .flex-adjustable-50, .flex-adjustable-50-large {
     margin: 0 1rem;
-    width: 50%; } }
+    width: 50%; }
+  .flex-adjustable-50:first-child {
+    margin-bottom: 0; } }
 
 @media only screen and (min-width: 1000px) {
   #hero-container, #footer-container {
@@ -1617,7 +1619,7 @@ body.dark .border {
 /* Content Styles */
 .content-news #content-area {
   width: calc(100% - 2rem);
-  padding: 3rem;
+  padding: 3rem 3rem 2rem 3rem;
   margin-top: 0;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px; }
@@ -2237,7 +2239,7 @@ body.dark .cky-footer-shadow {
     margin-left: 0;
     width: 100%; }
   .content-news #content-area {
-    padding: 4rem 5rem 3rem 5rem;
+    padding: 3rem 5rem 2rem 5rem;
     width: calc(100% - 10rem); }
   .content-news #content-img {
     margin-left: 0;
