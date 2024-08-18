@@ -1,7 +1,7 @@
 <div class="block">
 
 <div class="row">
-<div class="segment-block bg1 text1 marg-medium"><span class="fourth">•</span> Senaste listorna</div><h4 class="fourth" id="reviews-archive-link"><a class="no" href="<?php echo home_url(); ?>/listor">Till arkivet <i data-feather="arrow-right" class="fourth marg-left"></i></a></h4>
+<div class="segment-block bg1 text1 marg-medium"><span class="fourth">•</span> Senaste uppdaterade listor</div><h4 class="fourth" id="reviews-archive-link"><a class="no" href="<?php echo home_url(); ?>/listor">Till arkivet <i data-feather="arrow-right" class="fourth marg-left"></i></a></h4>
 </div>
 
 <div class="block-info-alt bg1 marg-medium">
@@ -14,7 +14,7 @@ $args = array(
     'posts_per_page' => 4,      // Number of posts to retrieve
     'post_status' => 'publish', // Only show published posts
     'post__not_in' => array($current_post_id), // Exclude the current post
-    'orderby' => 'date',        // Order by date
+    'orderby' => 'modified',        // Order by date
     'order' => 'DESC'           // Most recent first
 );
 

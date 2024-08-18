@@ -11,7 +11,7 @@ $args = array(
     'post_type' => 'listor',  // Post type 'artiklar'
     'posts_per_page' => 4,      // Number of posts to retrieve
     'post_status' => 'publish', // Only show published posts
-    'orderby' => 'date',        // Order by date
+    'orderby' => 'modified',        // Order by date
     'order' => 'DESC'           // Most recent first
 );
 
