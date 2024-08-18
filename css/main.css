@@ -1343,6 +1343,9 @@ body.dark .border {
   height: 300px !important;
   background-position: center calc(100% - 4rem) !important; }
 
+.list-archive h1 {
+  color: #373F51; }
+
 .review-block {
   box-shadow: 0 0 5px rgba(92, 80, 226, 0.25);
   animation: pulsate 5s infinite; }

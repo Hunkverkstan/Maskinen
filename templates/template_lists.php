@@ -30,7 +30,7 @@ if ($query->have_posts()) :
 
 <div class="article-block-alt list-archive" style="background-image:url('<?php echo esc_url($thumbnail_url); ?>')">
 <?php  if( get_field('list_tag') == 'yes' ) { ?><div class="article-block-meta fourth bg4"><i data-feather="refresh-cw" class="fourth marg-right"></i>Levande lista</div><?php } ?><div class="article-block-info-alt">
-<h1 class="text1 marg-small"><?php the_title(); ?></h1>
+<h1 class="marg-small"><?php the_title(); ?></h1>
 <div class="button-grp"><button class="fourth-bg" onclick="location.href='<?php the_permalink(); ?>'">Till listan</button>
                             </div>
                         </div>
