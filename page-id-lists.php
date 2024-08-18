@@ -26,11 +26,7 @@ $query = new WP_Query(array(
 $post_count = $query->post_count;
 wp_reset_postdata();
 
-// Subtrahera 1 från det totala antalet inlägg
-$adjusted_post_count = $post_count - 1;
-
-// Skriv ut det justerade antalet inlägg
-echo $adjusted_post_count;
+echo $post_count;
 ?> st)
             </div>
         </div>
