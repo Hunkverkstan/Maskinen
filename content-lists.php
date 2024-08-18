@@ -8,7 +8,7 @@
 <p class="breadcrumb x-small marg-large text2"><a href="<?php echo home_url(); ?>">Hem</a> > <a href="<?php echo home_url(); ?>/listor">Listor</a> > <?php the_title(); ?></p>
 </div>
 <div id="content-img" class="marg-medium" style="background-image:url(<?php echo get_the_post_thumbnail_url( $post, 'full' ); ?>)">
-<div id="content-location" class="bg1 fourth"><?php the_field('article_tag'); ?></div>
+<?php  if( get_field('list_tag') == 'yes' ) { ?><div id="content-location" class="bg4 fourth"><i data-feather="refresh-cw" class="fourth marg-right"></i>Levande lista</div><?php } ?>
 </div>
 <div id="content-area" class="bg1">
 <h1 class="text1 marg-medium"><?php the_title(); ?></h1>   

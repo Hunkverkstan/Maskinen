@@ -4,7 +4,7 @@
 <div class="segment-block bg1 text1 marg-medium"><span class="fourth">•</span> Senaste listorna</div><h4 class="fourth" id="reviews-archive-link"><a class="no" href="<?php echo home_url(); ?>/listor">Till arkivet <i data-feather="arrow-right" class="fourth marg-left"></i></a></h4>
 </div>
 
-<div class="block-info bg1 marg-medium">
+<div class="block-info-alt bg1 marg-medium">
   
 <div class="flex">    
 <?php
@@ -31,11 +31,9 @@ if ($query->have_posts()) :
         $thumbnail_url = get_the_post_thumbnail_url($post_id, 'full') ?: '';
         ?>
 
-<div class="article-block-alt article-archive" style="background-image:url('<?php echo esc_url($thumbnail_url); ?>')">
-<div class="article-block-overlay"></div>
-<div class="article-block-meta fourth fourth-bg-tone"><?php the_field('article_tag'); ?></div>
-<div class="article-block-info-alt">
-<h1 class="text3 marg-small"><?php the_title(); ?></h1>
+<div class="article-block-alt list-archive" style="background-image:url('<?php echo esc_url($thumbnail_url); ?>')">
+<?php  if( get_field('list_tag') == 'yes' ) { ?><div class="article-block-meta fourth bg4"><i data-feather="refresh-cw" class="fourth marg-right"></i>Levande lista</div><?php } ?><div class="article-block-info-alt">
+<h1 class="text1 marg-small"><?php the_title(); ?></h1>
 <div class="button-grp"><button class="fourth-bg" onclick="location.href='<?php the_permalink(); ?>'">Till listan</button>
                             </div>
                         </div>

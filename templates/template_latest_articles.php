@@ -4,7 +4,7 @@
 <div class="segment-block bg1 text1 marg-medium"><span class="third">•</span> Senaste artiklarna</div><h4 class="third" id="reviews-archive-link"><a class="no" href="<?php echo home_url(); ?>/artiklar">Till arkivet <i data-feather="arrow-right" class="third marg-left"></i></a></h4>
 </div>
 
-<div class="block-info-alt bg2 marg-medium">
+<div class="block-info-alt bg1 marg-medium">
 
 <div class="flex">    
 <?php

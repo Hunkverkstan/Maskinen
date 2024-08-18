@@ -35,7 +35,7 @@ echo $adjusted_post_count;
             </div>
         </div>
 
-<div class="block-info-alt bg2 marg-medium">
+<div class="block-info-alt bg1 marg-medium">
             <?php
             $category = get_queried_object();
             $category_slug = $category->slug;
