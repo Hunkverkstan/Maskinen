@@ -1439,7 +1439,7 @@ body.dark .border {
   padding: 0.25rem 0.75rem;
   border-radius: 100px; }
 
-.review-block-meta svg {
+.review-block-meta, .article-block-meta svg {
   height: 9px;
   width: 9px; }
 
