@@ -1825,7 +1825,7 @@ body.dark .border {
   font-size: 2.4rem; }
 
 #content-post h3 {
-  font-size: 2rem; }
+  font-size: 2rem !important; }
 
 #content-post img {
   margin: 1.5rem 0 1.5rem -1rem;
