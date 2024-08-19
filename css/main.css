@@ -1342,6 +1342,7 @@ body.dark .border {
   height: 250px !important; }
 
 .list-archive {
+  box-sizing: border-box;
   height: 300px !important;
   background-position: center calc(100% - 4rem) !important; }
 
@@ -1353,7 +1354,9 @@ body.dark .border {
   animation: pulsate 5s infinite; }
 
 .highest {
-  box-shadow: 0 0 10px rgba(255, 153, 0, 0.5); }
+  box-shadow: 0 0 10px rgba(255, 153, 0, 0.5);
+  border: 1px solid rgba(255, 153, 0, 0.5);
+  box-sizing: border-box; }
 
 @keyframes pulsate {
   0% {

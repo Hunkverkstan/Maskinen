@@ -187,7 +187,7 @@
 }
 
 .article-archive {height:250px!important;}
-.list-archive {height:300px!important;background-position: center calc(100% - 4rem)!important;}
+.list-archive {box-sizing: border-box; height:300px!important;background-position: center calc(100% - 4rem)!important;}
 .list-archive h1 {color:$primary-text-color;}
 
 .review-block {
@@ -195,7 +195,7 @@
   animation: pulsate 5s infinite;
 }
 
-.highest {box-shadow: 0 0 10px rgba($fourth-color, 0.5);}
+.highest {box-shadow: 0 0 10px rgba($fourth-color, 0.5);border: 1px solid rgba($fourth-color, 0.5);box-sizing: border-box;}
 
 @keyframes pulsate {
   0% {

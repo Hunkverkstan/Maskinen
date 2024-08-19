@@ -156,7 +156,7 @@ if (!empty($related_posts)) {
             ?>
 <div class="article-block-related" style="background-image:url('<?php echo get_the_post_thumbnail_url($post, 'full'); ?>')">
 <div class="article-block-overlay"></div>
-<?php  if( get_field('list_tag') == 'yes' ) { ?><div class="article-block-meta fourth bg4"><i data-feather="refresh-cw" class="fourth marg-right"></i>Levande lista</div><?php } ?><div class="article-block-info-alt">
+<?php  if( get_field('list_tag') == 'yes' ) { ?><div class="article-block-meta fourth bg1"><i data-feather="refresh-cw" class="fourth marg-right"></i>Levande lista</div><?php } ?><div class="article-block-info-alt">
 <h1 class="text3 marg-small"><?php the_title(); ?></h1>
 <div class="button-grp"><button class="fourth-bg" onclick="location.href='<?php the_permalink(); ?>'">Till listan</button>
                             </div>

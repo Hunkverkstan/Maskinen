@@ -25,7 +25,7 @@
         $post_count_label = sprintf('%d %s', $post_count, ($post_count === 1 ? 'st' : 'st'));
 
         // Output the category name with link and post count
-        echo '<h4 class="text1 row block-link"><a class="no" href="' . $category_link . '">' . $category_name . '</a> <span class="block-link-meta text3">' . $post_count_label . '</span></h4>';
+        echo '<h5 class="text1 row block-link"><a class="no" href="' . $category_link . '">' . $category_name . '</a> <span class="block-link-meta text3">' . $post_count_label . '</span></h5>';
     }
     ?>
 </div>
