@@ -1123,6 +1123,11 @@ li:before {
   display: inline-block;
   text-align: center; }
 
+.block-info li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
 ol.top li::before {
   color: #37dd7f; }
 

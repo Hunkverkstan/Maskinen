@@ -34,6 +34,12 @@ li:before {
     text-align: center;
 }
 
+.block-info li {
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
 ol.top li::before {
 color: $primary-color; 
 }
