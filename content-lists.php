@@ -11,8 +11,8 @@
 <?php  if( get_field('list_tag') == 'yes' ) { ?><div id="content-location" class="bg1 fourth"><i data-feather="refresh-cw" class="fourth marg-right"></i>Levande lista</div><?php } ?>
 </div>
 <div id="content-area" class="bg1">
-<h1 class="text1 marg-medium"><?php the_title(); ?></h1>   
-
+<?php  if( get_field('list_tag') == 'yes' ) { ?><h4 class="text2"><i data-feather="refresh-cw" class="text2 marg-right"></i>Den här listan uppdateras kontinuerligt</h4><hr class="marg-large"><?php } ?> 
+<h1 class="text1 marg-medium"><?php the_title(); ?></h1> 
 <h3 class="text1 marg-large"><?php echo strip_tags( get_the_excerpt() ); ?></h3>
     
 <div class="button-grp"> 
