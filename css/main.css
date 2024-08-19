@@ -1144,6 +1144,9 @@ hr {
   border-width: 0;
   border-top: 1px solid rgba(154, 154, 154, 0.2); }
 
+#content-post hr {
+  margin: 2.5rem 0; }
+
 .border {
   border: 1px solid rgba(154, 154, 154, 0.2); }
 
@@ -2481,7 +2484,7 @@ body.dark .cky-footer-shadow {
     height: 450px; }
   #content h1, #content-archive h1, #pages-archive .pages-title {
     font-size: 4rem; }
-  #content-post p, #content-post li {
+  #content h3, #content-post p, #content-post li {
     font-size: 1.8rem; }
   #content-post .wp-caption-text {
     font-size: 1.6rem; }
