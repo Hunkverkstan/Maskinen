@@ -731,13 +731,16 @@ padding-right: 1rem;}
   margin-left: -2rem;
 }
 
-#content-post h2 {
+#content-post h2,#content-post h3 {
   font-family: $font-stack-alt;
   margin-bottom: 1rem;
   margin-top: 2.5rem;
   letter-spacing: 0;
-  font-weight: 600;
+  font-weight: 700;
 }
+
+#content-post h2 {font-size: 2.4rem;}
+#content-post h3 {font-size: 2rem;}
 
 #content-post img {
   margin: 1.5rem 0 1.5rem -1rem;
@@ -1275,8 +1278,6 @@ body.dark .first-post .review-block-title h2{background-color:unset}
 #intro-text button{font-size:1.6rem}
 #content-img{height:450px}
 #content h1,#content-archive h1,#pages-archive .pages-title{font-size:4rem}
-#content h3{font-size:1.9rem}
-#content h2{font-size:1.9rem}
 #content-post p,#content-post li{font-size:1.8rem}
 #content-post .wp-caption-text{font-size:1.6rem}
 .sidebar .review-block-small{width:100%}
