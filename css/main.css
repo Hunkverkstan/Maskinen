@@ -1837,6 +1837,7 @@ body.dark .border {
   width: 100% !important; }
 
 #content-post .wp-caption-text {
+  color: #9FACBD;
   font-size: 1.4rem;
   margin: -1.5rem 0 3rem 0; }
 
@@ -2042,7 +2043,7 @@ input[type="text"]:active {
   top: -1rem !important; }
 
 .gm-style-iw-d {
-  padding: 1.5rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
   text-align: center;
   overflow: hidden !important; }
 
@@ -2057,7 +2058,10 @@ input[type="text"]:active {
   font-weight: normal !important;
   font-size: 1.6rem;
   display: block;
-  margin-bottom: 1rem !important; }
+  margin-bottom: 1rem !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
 
 .wpgmza_infowindow_link {
   text-decoration: none !important; }
@@ -2075,6 +2079,7 @@ input[type="text"]:active {
   width: 70px; }
 
 .gm-ui-hover-effect {
+  position: absolute !important;
   top: 0 !important;
   right: 2px !important;
   opacity: 1 !important; }
@@ -2489,10 +2494,8 @@ body.dark .cky-footer-shadow {
     height: 450px; }
   #content h1, #content-archive h1, #pages-archive .pages-title {
     font-size: 4rem; }
-  #content h3, #content-post p, #content-post li {
+  #content h3, #content-post li {
     font-size: 1.8rem; }
-  #content-post .wp-caption-text {
-    font-size: 1.6rem; }
   .sidebar .review-block-small {
     width: 100%; }
   .in-sidebar .review-block-small-info h2, .in-sidebar .article-block-small-info h2, .sidebar .review-block-small h2 {
