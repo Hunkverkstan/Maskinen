@@ -11,7 +11,7 @@
 <div id="content-img" class="marg-large" style="background-image:url(<?php echo get_the_post_thumbnail_url( $post, 'full' ); ?>)">
 <div id="content-location" class="bg4 text3"><i data-feather="map-pin" class="marg-right text3"></i><?php $categories = get_the_category(); if ( ! empty( $categories ) ) { echo esc_html( $categories[0]->name ); } ?>
 </div>
-<div id="content-rating"><div class="button-grp"><div class="button-stars bg2 review-star-big"><?php $review_rating = get_field('review_rating'); echo ($review_rating >= 1 && $review_rating <= 5) ? '<img src="https://www.malmomaskinen.se/wp-content/themes/Maskinen/img/mm_stars_' . $review_rating . '.svg" alt="' . $review_rating . ' star' . ($review_rating > 1 ? 's' : '') . '">' : 'Saknas'; ?>
+<div id="content-rating"><div class="button-grp"><div class="button-stars bg3 review-star-big"><?php $review_rating = get_field('review_rating'); echo ($review_rating >= 1 && $review_rating <= 5) ? '<img src="https://www.malmomaskinen.se/wp-content/themes/Maskinen/img/mm_stars_' . $review_rating . '.svg" alt="' . $review_rating . ' star' . ($review_rating > 1 ? 's' : '') . '">' : 'Saknas'; ?>
 </div></div></div>
 </div>
 

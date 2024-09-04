@@ -47,7 +47,7 @@ if ($query->have_posts()) :
                 <div class="flex-custom">
                     <div class="review-block-small-meta meta-date text4"><?php the_time('j M Y'); ?></div>
                     <div class="button-grp">
-                        <div class="button-stars bg2 review-star-alt <?php echo ($review_rating == 5) ? 'highest' : ''; ?>">
+                        <div class="button-stars bg3 review-star-alt <?php echo ($review_rating == 5) ? 'highest' : ''; ?>">
                             <?php 
                             if ($review_rating >= 1 && $review_rating <= 5) {
                                 echo '<img src="' . esc_url($stars_svg_url) . '" alt="' . esc_attr($review_rating) . ' star' . ($review_rating > 1 ? 's' : '') . '">';

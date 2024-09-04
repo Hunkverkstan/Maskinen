@@ -128,7 +128,7 @@ if (!empty($related_posts)) {
                     <div class="review-block-content">
                         <div class="review-block-title marg-small"><h2 class="bg1 text1"><?php the_title(); ?></h2></div>
                         <div class="review-block-cta button-grp">
-                            <div class="button-stars bg2 review-star <?php $review_rating = get_field('review_rating'); echo ($review_rating == 5) ? 'highest' : ''; ?>"><?php 
+                            <div class="button-stars bg3 review-star <?php $review_rating = get_field('review_rating'); echo ($review_rating == 5) ? 'highest' : ''; ?>"><?php 
                                 echo ($review_rating >= 1 && $review_rating <= 5) ? '<img src="' . get_template_directory_uri() . '/img/mm_stars_' . $review_rating . '.svg" alt="' . $review_rating . ' star' . ($review_rating > 1 ? 's' : '') . '">' : 'Saknas'; 
                             ?></div>
                             <button class="secondary-bg" onclick="location.href='<?php the_permalink(); ?>'">Läs recension</button>
