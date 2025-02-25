@@ -31,7 +31,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="og:description" content="<?php the_field('website_description', 'option'); ?>">
 <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/malmomaskinen_og.jpg" />
 <meta name="twitter:title" content="<?php echo get_bloginfo('name'); ?>" />
-<meta name="keywords" content="malmömaskinen, malmö recensioner, malmö tips, malmö omdömen, upplevelser malmö, sevärdheter malmö, turistmål malmö, roliga saker malmö, utflykter malmö, utforska malmö">
 
 <?php elseif (is_singular('post') || is_singular('page') || is_singular('artiklar') || is_singular('listor') || is_singular('nyheter')) : ?>
 <!-- Meta tags för enskilda inlägg och sidor -->
@@ -44,17 +43,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/malmomaskinen_og.jpg" />
 <?php endif; ?>
 <meta name="twitter:title" content="<?php the_title(); ?>" />
-<?php if (is_singular('post')) : ?>
-<meta name="keywords" content="<?php the_title(); ?> malmö, <?php the_title(); ?> malmö recension, <?php the_title(); ?> malmö omdöme, <?php the_title(); ?> malmö betyg">
-<?php elseif (is_singular('page')) : ?>
-<meta name="keywords" content="<?php the_title(); ?>, malmömaskinen information">
-<?php elseif (is_singular('artiklar')) : ?>
-<meta name="keywords" content="<?php the_title(); ?>">
-<?php elseif (is_singular('listor')) : ?>
-<meta name="keywords" content="<?php the_title(); ?>, malmö lista, malmö topplista">
-<?php elseif (is_singular('nyheter')) : ?>
-<meta name="keywords" content="<?php the_title(); ?>, malmömaskinen uppdatering, malmömaskinen nyhet">
-<?php endif; ?>
 
 <?php elseif (is_category()) : ?>
 
@@ -63,7 +51,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="og:description" content="<?php echo strip_tags(category_description()); ?>">
 <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/malmomaskinen_og.jpg" />
 <meta name="twitter:title" content="Kategori • <?php single_cat_title(); ?>" />
-<meta name="keywords" content="<?php single_cat_title(); ?> i malmö, recensioner <?php single_cat_title(); ?> malmö, <?php single_cat_title(); ?> upplevelser, utflykter <?php single_cat_title(); ?>, bäst i <?php single_cat_title(); ?>">
 
 <?php elseif (is_tag()) : ?>
 
@@ -72,7 +59,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="og:description" content="Här hittar du alla recensioner från Malmömaskinen med aktuell tagg.">
 <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/malmomaskinen_og.jpg" />
 <meta name="twitter:title" content="Tagg • <?php single_tag_title(); ?>" />
-<meta name="keywords" content="<?php single_tag_title(); ?> recensioner malmö, <?php single_tag_title(); ?> tips malmö, <?php single_tag_title(); ?> malmö, bästa <?php single_tag_title(); ?> malmö">
 
 <?php elseif (is_404()) : ?>
 <!-- Meta tags för 404-sidor -->
@@ -90,7 +76,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="og:description" content="<<?php echo strip_tags(get_the_excerpt()); ?>">
 <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/malmomaskinen_og.jpg" />
 <meta name="twitter:title" content="<?php the_title(); ?>" />
-<meta name="keywords" content="malmömaskinen, malmö recensioner, malmö tips, malmö omdömen, upplevelser malmö, sevärdheter malmö, turistmål malmö, roliga saker malmö, utflykter malmö, utforska malmö">
 
 <?php endif; ?>
 
