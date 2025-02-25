@@ -14,6 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      crossorigin="anonymous"></script>
     
 <!-- Meta -->
+<?php wp_head();?>
 <meta charset="utf-8">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 <meta property="og:locale" content="sv_SE" />
@@ -93,8 +94,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="theme-color" content="#5c50e2">
 
 <!-- Header & Nav-->
-<?php wp_head();?>
-    
 <div id="body-inner">
 
 <svg id="svg1" data-name="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.66 146.49"><defs></defs><path class="svg1" d="M144.2,54.3c15.2,16.6,31.1,31.2,33.9,48.5s-7.4,37.5-22.6,49.1-35.3,14.5-53.3,12.3-33.7-9.5-44.3-21.1-16-27.3-16-43.1,5.3-31.7,15.8-48.3,26.5-34,41.6-33.3S129.1,37.7,144.2,54.3Z" transform="translate(-41.9 -18.38)"/></svg>
