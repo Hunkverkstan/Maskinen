@@ -15,6 +15,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
 <!-- Meta -->
 <meta charset="utf-8">
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<meta property="og:locale" content="sv_SE" />
+<meta property="og:type" content="website" />
 <meta property="og:site_name" content="<?php echo get_bloginfo('name'); ?>" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
